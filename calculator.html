@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" name="first"><br><br>
+        <input type="text" name="second"><br><br>
+        <input type="button" name="" value="Add" onclick="add()">
+        <input type="button" name="" value="Subtraction" onclick="sub()">
+        <input type="button" name="" value="Multiply" onclick="mul()">
+        <input type="button" name="" value="Divide" onclick="divi()"><br><br>
+        <input type="text" name="result">
+    <form>
+   
+
+    <script type="text/javascript">
+        function add(){
+            first=parseInt(myform.first.value)
+            second=parseInt(myform.second.value)
+            result=first+second;
+            myform.result.value=result;
+        }
+        function sub(){
+            first=parseInt(myform.first.value)
+            second=parseInt(myform.second.value)
+            result=first-second;
+            myform.result.value=result;
+        }
+        function mul(){
+            first=parseInt(myform.first.value)
+            second=parseInt(myform.second.value)
+            result=first*second;
+            myform.result.value=result;
+        }
+        function divi(){
+            first=parseInt(myform.first.value)
+            second=parseInt(myform.second.value)
+            result=first/second;
+            myform.result.value=result;
+        }
+    </script>
+</body>
+</html>
